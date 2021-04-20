@@ -1,8 +1,8 @@
 \documentclass[a4paper]{article}
 
 \usepackage[
-    top=0.79in,
-    bottom=0.79in,
+    top=0.59in,
+    bottom=0.59in,
     left=0.79in,
     right=0.79in,
 ]{geometry}
@@ -35,7 +35,7 @@
 \newenvironment{skills}{%
 \setlength{\tablewidth}{\linewidth}
 \addtolength{\tablewidth}{-2\tabcolsep}
-\begin{tabular}{@{}p{0.15\tablewidth}p{0.85\tablewidth}@{}}
+\begin{tabular}{@{}p{0.17\tablewidth}p{0.85\tablewidth}@{}}
 }{%
 \end{tabular}
 }
@@ -55,30 +55,31 @@
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
 \raggedleft
-\href{mailto:ajdin.trejic@fer.hr}{ajdin.trejic@fer.hr} \\
-\href{mailto:ajdintrejic@protonmail.ch}{ajdintrejic@protonmail.ch} \\
+\href{https://ajdin.io}{ajdin.io} \\
 \href{https://github.com/ajdintrejic}{github.com/ajdintrejic} \\
-\href{ajdintrejic.github.io}{ajdintrejic.github.io}
+\href{mailto:ajdin.trejic@fer.hr}{ajdin.trejic@fer.hr} \\
+\href{mailto:ajdintrejic@protonmail.ch}{ajdintrejic@protonmail.ch} 
 \end{minipage}
 
 \vspace{1em}
 
 \section{education}
 
+\subsection{University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia}
+\begin{period}{Pursuing BSc in Computer Science}{Sep 2018 -- June 2021\linebreak}
+    \item Relevant courses:
+        \textit{Computer Security},
+        \textit{Communication Networks}
+        \textit{Web and Mobile Device Development},
+        \textit{Operating Systems},
+\end{period}
+
+
 \subsection{High school Mate Balota Poreč, Croatia}
 \begin{period}{Graduated HS}{Sept 2014 -- May 2018}
-\item Gymnasium
 \item German Language Certification (DSD B1)
 \end{period}
 
-\subsection{University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia}
-\begin{period}{Pursuing BSc in Computer Science}{Sep 2018 -- May 2021\linebreak(expected)}
-    \item Relevant courses:
-        \textit{Web and Mobile Device Development},
-        \textit{Operating Systems},
-        \textit{Object Oriented Programming},
-        \textit{Databases}
-\end{period}
 \iffalse
 \begin{period}{BSc in Computer Science}{Sep 2008 -- Jul 2011}
     \item thesis:
@@ -87,16 +88,29 @@
 \end{period}
 \fi
 
-\section{education - other}
+\section{Projects}
 
-\subsection{Practical Ethical Hacking - The Complete Course (Udemy)}
-\begin{period}{Currently in process}{Mar 2020 -- ?}
-\item Created by Heath Adams, TCM Security, Inc.
+\subsection{Cyber Threat Intelligence - Lead developer (mostly back end)}
+\begin{period}{Application for analyzing server logs to detect malicious activity}{2020 -- ?}
+\item Stack: ELK stack, Neo4J, PostgreSQL, Angular, Django
+\item Source: github.com/ajdintrejic/cyber-threat-intelligence
 \end{period}
+
+\subsection{Worklog - Front end Developer (Demo)}
+\begin{period}{Developed a demo SPA in ReactJs}{2020}
+\item Live at: worklog.asyncra.com
+\end{period}
+
+
+\subsection{RoomSwitchr - Front end Developer}
+\begin{period}{Developed a SPA in ReactJs }{2020}
+\item Faculty project - App for switching university accommodation 
+\end{period}
+
+\iffalse
 
 \section{work experience}
 No prior work experience in tech field\\
-\iffalse
 
 \subsection{Firma d.o.o., Zagreb, Croatia}
 \begin{period}{Software Engineering Intern}{Jun 2012 -- Sep 2012}
@@ -117,51 +131,48 @@ No prior work experience in tech field\\
 \end{period}
 \fi
 
-
-
 \section{achievements}
 \begin{skills}
-    HackTheBox.eu   	&   Owned: 10 systems (hackthebox.eu/home/users/profile/230337)\\
-    Root-me.org     	&   Current rank: 9273 (root-me.org/nsf)\\
-    OWASP 	 		& 	JuiceShop: In progress (vulnerable web app)
+    HackTheBox.eu   	&   Owned: 10+ systems (https://app.hackthebox.eu/profile/230337)\\
+    Root-me.org     	&   Current rank: 10926 (root-me.org/nsf)\\
+    Infobip 2021 CTF    &   8th place (as team) \\
+    BalCCon2k20 CTF    	&   13th place (as team)
+
     
 \end{skills}
 
 \section{technical skills}
 \begin{skills}
-    Intermediate &
-    \begin{itemize}
-        
-        \item \textbf{Linux} -- used as main OS for 3+ years
-        
-
-    \end{itemize} \\
-    Basic &
-    \begin{itemize}
-        \item \textbf{Burp Suite} -- used for CTFs
-        \item \textbf{JohnTheRipper} -- used for CTFs
-        \item \textbf{nmap} -- used for CTFs
-        \item \textbf{Python} -- used for university courses and CTFs
-        \item \textbf{Bash}
-        
-
-    \end{itemize} \\
     Languages &
     \begin{itemize}
-        
-        \item \textbf{JavaScript (React, NodeJS)} -- used for web development
-        \item \textbf{Python (Django)} -- used for CTFs and web development
-        \item \textbf{SQL (PostgreSQL)} -- used for databases for web development
-
-        
+        \item \textbf{Python} --  CTFs, web development and scripting
+        \item \textbf{JavaScript} --  web development
+        \item \textbf{SQL} --  PostgreSQL
+        \item \textbf{Bash/sh} --  scripting tasks 
 
     \end{itemize} \\
+        Frameworks and libraries &
+    \begin{itemize}
+        
+        \item \textbf{ReactJs, NodeJs, ExpressJs} 
+        \item \textbf{Django, Django REST}
+
+    \end{itemize} \\
+    
+        Other &
+    \begin{itemize}
+        
+        \item \textbf{Linux}
+
+    \end{itemize} \\
+
+
 \end{skills}
 
 \section{other skills and interests}
 \begin{skills}
     Languages & Croatian (native), English (fluent), German (basic) \\
-    Interests & Web Vulnerabilities, Information Security \\
+    Interests & Web Vulnerabilities, Information Security, Cryptography \\
 \end{skills}
 
 \end{document}
