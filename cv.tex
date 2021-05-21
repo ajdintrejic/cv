@@ -1,8 +1,8 @@
 \documentclass[a4paper]{article}
 
 \usepackage[
-    top=0.59in,
-    bottom=0.59in,
+    top=0.79in,
+    bottom=0.79in,
     left=0.79in,
     right=0.79in,
 ]{geometry}
@@ -40,6 +40,14 @@
 \end{tabular}
 }
 
+\newenvironment{achievments}{%
+\setlength{\tablewidth}{\linewidth}
+\addtolength{\tablewidth}{-2\tabcolsep}
+\begin{tabular}{@{}p{0.4\tablewidth}p{0.85\tablewidth}@{}}
+}{%
+\end{tabular}
+}
+
 \titleformat{\section}{\uppercase}{}{0pt}{}[{\vspace{0.5em}\titlerule}]
 \titleformat{\subsection}{\bf}{}{0pt}{}{}
 \titlespacing{\section}{0pt}{1em}{0.5em}
@@ -51,13 +59,12 @@
 
 \begin{minipage}{.5\textwidth}
 \LARGE{Ajdin Trejić}\\
-\normalsize{52440 Poreč, Croatia}
+\normalsize{Zagreb, Croatia}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
 \raggedleft
 \href{https://ajdin.io}{ajdin.io} \\
 \href{https://github.com/ajdintrejic}{github.com/ajdintrejic} \\
-\href{mailto:ajdin.trejic@fer.hr}{ajdin.trejic@fer.hr} \\
 \href{mailto:ajdintrejic@protonmail.ch}{ajdintrejic@protonmail.ch} 
 \end{minipage}
 
@@ -65,20 +72,16 @@
 
 \section{education}
 
-\subsection{University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia}
-\begin{period}{Pursuing BSc in Computer Science}{Sep 2018 -- June 2021\linebreak}
+\subsection{Computer Science, Faculty of Electrical Engineering and Computing,  University of Zagreb}
+\begin{period}{Pursuing MSc in Computer Science}{Sep 2018 -- June 2023\linebreak}
     \item Relevant courses:
         \textit{Computer Security},
-        \textit{Communication Networks}
+        \textit{Communication Networks},
         \textit{Web and Mobile Device Development},
-        \textit{Operating Systems},
+        \textit{Operating Systems}
 \end{period}
 
 
-\subsection{High school Mate Balota Poreč, Croatia}
-\begin{period}{Graduated HS}{Sept 2014 -- May 2018}
-\item German Language Certification (DSD B1)
-\end{period}
 
 \iffalse
 \begin{period}{BSc in Computer Science}{Sep 2008 -- Jul 2011}
@@ -91,19 +94,20 @@
 \section{Projects}
 
 \subsection{Cyber Threat Intelligence - Lead developer (mostly back end)}
-\begin{period}{Application for analyzing server logs to detect malicious activity}{2020 -- ?}
+\begin{period}{Application for analyzing server logs to detect malicious activity}{Sept 2020 -- May 2020}
+\item Lead a team of developers as a project manager/tech lead
 \item Stack: ELK stack, Neo4J, PostgreSQL, Angular, Django
-\item Source: github.com/ajdintrejic/cyber-threat-intelligence
+\item Source: \href{https://github.com/ajdintrejic/cyber-threat-intelligence}{github.com/ajdintrejic/cyber-threat-intelligence}
 \end{period}
 
 \subsection{Worklog - Front end Developer (Demo)}
-\begin{period}{Developed a demo SPA in ReactJs}{2020}
-\item Live at: worklog.asyncra.com
+\begin{period}{Developed a demo SPA in ReactJs and deployed to Netlify for learning purposes}{Feb 2020}
+\item Live at: \href{https://worklog.asyncra.com}{worklog.asyncra.com}
 \end{period}
 
 
 \subsection{RoomSwitchr - Front end Developer}
-\begin{period}{Developed a SPA in ReactJs }{2020}
+\begin{period}{Developed a SPA in ReactJs for a faculty project, focus on design, security (e.g. authentication)}{Sept 2020 - Jan 2021}
 \item Faculty project - App for switching university accommodation 
 \end{period}
 
@@ -132,14 +136,14 @@ No prior work experience in tech field\\
 \fi
 
 \section{achievements}
-\begin{skills}
-    HackTheBox.eu   	&   Owned: 10+ systems (https://app.hackthebox.eu/profile/230337)\\
-    Root-me.org     	&   Current rank: 10926 (root-me.org/nsf)\\
-    Infobip 2021 CTF    &   8th place (as team) \\
-    BalCCon2k20 CTF    	&   13th place (as team)
+\begin{achievments}
+    HackTheBox.eu (Hacking playground)   	&   Owned: 10+ systems (\href{https://app.hackthebox.eu/profile/230337}{app.hackthebox.eu/profile/230337})\\
+    Root-me.org (Global security competition)    	&   Current rank: 10926 (\href{https://www.root-me.org/nsf?lang=en}{root-me.org/nsf})\\
+    Infobip 2021 CTF (Security competition)    &   8th place (as team) \\
+    BalCCon2k20 CTF (Security competition)   	&   13th place (as team)
 
     
-\end{skills}
+\end{achievments}
 
 \section{technical skills}
 \begin{skills}
@@ -171,7 +175,7 @@ No prior work experience in tech field\\
 
 \section{other skills and interests}
 \begin{skills}
-    Languages & Croatian (native), English (fluent), German (basic) \\
+    Languages & Croatian (native), English (C1), German (B1) \\
     Interests & Web Vulnerabilities, Information Security, Cryptography \\
 \end{skills}
 
